@@ -138,6 +138,11 @@ extern volatile int ZirconModuleAnchorSource;
 static int LLVM_ATTRIBUTE_UNUSED ZirconModuleAnchorDestination =
     ZirconModuleAnchorSource;
 
+// This anchor is used to force the linker to link the ProgressToolModule.
+extern volatile int ProgressToolModuleAnchorSource;
+static int LLVM_ATTRIBUTE_UNUSED ProgressToolModuleAnchorDestination =
+    ProgressToolModuleAnchorSource;
+
 } // namespace tidy
 } // namespace clang
 
